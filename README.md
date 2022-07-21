@@ -22,3 +22,7 @@ span[class~="sr-only"] {
 }
 ```
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/78083890/180297257-d5cb8945-c400-45d4-981f-70b73915e8c7.png" alt="laptopScreen" width="600">
+</p>
+
