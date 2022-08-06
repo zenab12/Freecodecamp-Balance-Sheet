@@ -26,3 +26,67 @@ span[class~="sr-only"] {
 <img src="https://user-images.githubusercontent.com/78083890/180297257-d5cb8945-c400-45d4-981f-70b73915e8c7.png" alt="laptopScreen" width="600">
 </p>
 
+## few tips i leaned From Mahratech:
+### display attribute to make table or list 
+1- `display:list-item` (list-style-position: inside or outside) inside or out side to make bullet of list inside element or outside it 
+
+2- `display:table` ;  it is inside display which affect on it’s children for parent element div.table ; and children will take different values for display as for caption we will use
+
+```
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+		 .table{display:table;width:300px;margin:50px auto;}
+		 .caption{display:table-caption;text-align:center;}
+		 .header{display:table-header-group;text-align:center;font-weight:bold;}
+		 .body{display:table-row-group}
+		 .footer{display:table-footer-group}
+		 .row{display:table-row}
+		 .cell{display:table-cell;text-align:center;border:3px dashed #ff3355;padding:10px;}
+	</style>
+	</head>
+	<body>
+
+		<div class="table">
+		<h2 class="caption">Table Caption</h2>
+		<div class="header">
+		   <div class="row">
+			 <div class="cell">Name</div>
+			 <div class="cell">Age</div>
+			 <div class="cell">Address</div>
+		   </div>
+		</div>
+
+		<div class="body">
+		   <div class="row">
+			 <div class="cell">Zienab</div>
+			 <div class="cell">22</div>
+			 <div class="cell">Mansoura</div>
+		   </div>
+		  <div class="row">
+			 <div class="cell">Souad</div>
+			 <div class="cell">22</div>
+			 <div class="cell">Mansoura</div>
+		   </div>
+		  <div class="row">
+			 <div class="cell">Sanaa</div>
+			 <div class="cell">22</div>
+			 <div class="cell">Mansoura</div>
+		   </div>
+		</div>
+
+		<div class="footer">
+			 <div class="row">
+			 <div class="cell">Amira</div>
+			 <div class="cell">22</div>
+			 <div class="cell">Mansoura</div>
+		   </div>
+		</div>
+
+		</div>
+
+	</body>
+</html>
+
+```
